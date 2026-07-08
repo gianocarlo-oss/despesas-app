@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/btnVoltar"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_back"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:text="Contato"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btnSalvar"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_save"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView style="@style/LabelCampo" android:text="Nome *" />
+            <EditText
+                android:id="@+id/editNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_field"
+                android:padding="14dp"
+                android:hint="Nome completo"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="16dp" />
+
+            <TextView style="@style/LabelCampo" android:text="E-mail" />
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_field"
+                android:padding="14dp"
+                android:hint="exemplo@email.com"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="16dp" />
+
+            <TextView style="@style/LabelCampo" android:text="Telefone" />
+            <EditText
+                android:id="@+id/editTelefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_field"
+                android:padding="14dp"
+                android:hint="(00) 00000-0000"
+                android:inputType="phone"
+                android:layout_marginBottom="16dp" />
+
+            <TextView style="@style/LabelCampo" android:text="Observações" />
+            <EditText
+                android:id="@+id/editObservacoes"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/rounded_field"
+                android:padding="14dp"
+                android:hint="Anotações sobre o contato..."
+                android:gravity="top|start"
+                android:inputType="textMultiLine" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

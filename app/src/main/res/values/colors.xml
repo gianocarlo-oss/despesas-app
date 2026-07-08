@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#4A6FA5</color>
+    <color name="primary_dark">#35507D</color>
+    <color name="accent">#FF7043</color>
+    <color name="background">#F4F6F9</color>
+    <color name="card_notas">#FFF3CD</color>
+    <color name="card_agenda">#D6E4FF</color>
+    <color name="card_despesas">#D9F2E6</color>
+    <color name="text_dark">#22314A</color>
+    <color name="text_muted">#66738B</color>
+    <color name="danger">#D9534F</color>
+    <color name="success">#3E9B5F</color>
+    <color name="white">#FFFFFF</color>
+</resources>
